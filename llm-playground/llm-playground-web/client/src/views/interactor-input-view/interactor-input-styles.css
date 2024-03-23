@@ -1,0 +1,466 @@
+
+
+#interactor-box {
+    box-sizing: border-box;
+    top: 500px;
+    /*position: fixed;*/
+    width: 800px;
+    /*margin: auto;*/
+    padding-bottom: 64px;
+    margin-inline: 24px;
+    max-width: 100%;
+    display: flex;
+    gap: 4px;
+    color: #7DA1C4;
+    /*text-shadow:*/
+    /*        -1px -1px 0 #3B5768,*/
+    /*        1px -1px 0 #3B5768,*/
+    /*        -1px  1px 0 #3B5768,*/
+    /*        1px  1px 0 #3B5768; !* Black outline *!*/
+
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            0px  1px 0 #000,
+            1px  1px 0 #000; /* Black outline */
+    /*align-items: center;*/
+    align-items: center;
+    align-self: center;
+    /*align-self: end;*/
+    /*margin-right: 280px;*/
+
+    /*text-align: center;*/
+    flex-direction: column
+    /*right: 100px;*/
+    /*left: 1700px;*/
+
+}
+
+#interactor-text-input {
+    width: 80%;
+    /*margin-right: 0px;*/
+    /*top:500px;*/
+    align-items: end;
+    align-self: end;
+    font-family: "Inder", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #0c1b71; /* same as user */
+    background-color: floralwhite;
+    border-color: antiquewhite;
+    outline-color: papayawhip;
+
+}
+
+#interactor-box .input-label {
+    margin-right: 7px; /* Adjust spacing between label and input */
+    flex-shrink: 0; /* Prevent the label from shrinking */
+    /*top: 900px;*/
+    align-items: end;
+}
+
+
+.scenario-num{
+    margin: auto;
+    /*color: hotpink;*/
+    /*background-color: hotpink;*/
+    /*position: relative;*/
+    /*margin: auto;*/
+    /*top: 300px;*/
+    /*bottom: 30px;*/
+    /*height: 90px;*/
+    /*border-radius: 10px; !* Optional: Adds rounded corners to the background *!*/
+
+}
+
+button{
+    margin: auto;
+    /*flex-direction: column;*/
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #87CEEB;
+    color: white;
+    /*text-shadow:*/
+    /*        -1px -1px 0 #B0C4DE,*/
+    /*        1px -1px 0 #B0C4DE,*/
+    /*        -1px  1px 0 #B0C4DE,*/
+    /*        1px  1px 0 #B0C4DE; !* Black outline *!*/
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            0px  1px 0 #000,
+            1px  1px 0 #000; /* Black outline */
+    border: none;
+    top: 550px;
+    bottom: 100px;
+    /*left: 400px;*/
+    /*right: 500px;*/
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /*flex-direction: column*/
+    font-family: "Basic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*button:hover{*/
+/*    background-color: #3e8e41;*/
+/*    box-shadow: 0 5px #666;*/
+/*}*/
+button:hover {
+    background-color: #B0E2FF; /* Darker shade on hover */
+    box-shadow: 0px 5px 5px 0px #5691C8; /* Original shadow effect for depth */
+    transform: translateY(-2px); /* Slightly raises the button */
+    border: 1px hidden #5B9BD5; /* Adds a solid white border as an outline */
+    outline: 1px solid #7EC0EE; /* Enhances outline with a color matching the hover background */
+}
+
+button:active{
+    background-color: #539DC2 ;
+    outline: #3B7B9B ;
+    box-shadow: 0 5px #2D5F7A ;
+
+    transform: translateY(15px);
+}
+
+.sc-description{
+    /*position: fixed;*/
+    background-color: rgba(245, 245, 245, 0.7); /* White with 50% opacity */
+    /*margin-inline: 300px;*/
+    margin: auto;
+    /*margin-inside: 300px;*/
+    position: fixed;
+    width: 50%;
+    /*align-content: center;*/
+
+    top: 400px;
+    /*width: 900px;*/
+    /*font-family: "Sunflower", sans-serif;*/
+    /*font-weight: 300;*/
+    /*font-style: normal;*/
+    font-family: "Basic", sans-serif;
+    font-weight: 20;
+    font-style: normal;
+    border-radius: 10px; /* Optional: Adds rounded corners to the background */
+    padding: 25px 25px;
+    font-size: 23px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+
+}
+.first-scenario{
+    background-color: rgba(245, 245, 245, 0.7); /* White with 50% opacity */
+    margin: auto;
+    padding: 25px 25px;
+    color: #7DA1C4;
+    position: fixed;
+    width: 50%;
+    top: 150px;
+    border-radius: 10px; /* Optional: Adds rounded corners to the background */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.outcome{
+    background-color: rgba(245, 245, 245, 0.6); /* White with 50% opacity */
+
+    margin: auto;
+    color: #8FBC8F;
+    /*text-shadow:*/
+    /*        -1px -1px 0 #5F7F5F,*/
+    /*        1px -1px 0 #5F7F5F,*/
+    /*        -1px  1px 0 #5F7F5F,*/
+    /*        1px  1px 0 #5F7F5F; !* Black outline *!*/
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            0px  1px 0 #000,
+            1px  1px 0 #000; /* Black outline */
+
+    position: fixed;
+    width: 50%;
+    top: 250px;
+    padding: 25px 25px;
+
+    border-radius: 10px; /* Optional: Adds rounded corners to the background */
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* This ensures the content itself is centered */
+    display: flex;
+    /*justify-content: center; !* Horizontally center the content *!*/
+    align-items: center; /* Vertically center the content (if needed) */
+    flex-direction: column; /* Stack children vertically; remove if you want side-by-side */
+    align-self: center;
+
+    font-family: "Inder", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 22px;
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+
+}
+
+.section-scenarios{
+    /*background-color: rgba(255, 255, 255, 0.5); !* White with 50% opacity *!*/
+    position: fixed ;
+    top: 120px; /* Adjust if necessary */
+    /*left: 0;*/
+    /*right: 0;*/
+    margin: auto;
+
+    width: 50%; /* Or any specific width you prefer */
+    /*background-color: yellow;*/
+    color: black;
+    text-align: center; /* Center the text inside */
+    /*border-radius: 18px;*/
+    font-size: 16px;
+    border-radius: 10px; /* Optional: Adds rounded corners to the background */
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* This ensures the content itself is centered */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content (if needed) */
+    flex-direction: column; /* Stack children vertically; remove if you want side-by-side */
+    align-self: center;
+
+}
+
+.sc-head{
+    background-color: rgba(245, 245, 245, 0.7); /* White with 50% opacity */
+
+    margin: auto;
+    position: fixed;
+    top: 150px;
+    color: #AEC6CF ;
+    /*text-shadow: 2px 2px 4px #000000; !* Horizontal offset, vertical offset, blur radius, color *!*/
+
+    /*text-shadow:*/
+    /*        -1px -1px 0 #5D7B8D,*/
+    /*        1px -1px 0 #5D7B8D,*/
+    /*        -1px  1px 0 #5D7B8D,*/
+    /*        1px  1px 0 #5D7B8D; !* Black outline *!    */
+
+    /*text-shadow:*/
+    /*        1px -1px 0 #000,*/
+    /*        1px -1px 0 #000,*/
+    /*        0px  -1px 0 #000,*/
+    /*        0px -1px 0 #000; !* Black outline *!*/
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            0px  1px 0 #000,
+            1px  1px 0 #000; /* Black outline */
+    align-items: center;
+    /*background-color: blue;*/
+    /*width: 50%;*/
+    width: 460px;
+    height: 55px;
+    /*background-color: yellow;*/
+    /*color: black;*/
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 38px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+    transform: translateX(-100%);
+    animation: revealText 2s forwards;
+    font-family: "Basic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        /*padding: 25px 25px;*/
+    }
+}
+@keyframes revealText {
+    to {
+        transform: translateX(0);
+    }
+}
+/*label{*/
+/*    color: deeppink;*/
+/*    position: fixed;*/
+/*    top: 550px;*/
+/*}*/
+.Matthew-label1{
+    color: #9370DB;
+    position: fixed;
+    margin: auto;
+    top: 580px;
+    /*left: 40%;*/
+    flex-direction: column;
+
+    /*text-align: center;*/
+    /*text-shadow:*/
+    /*        -1px -1px 0 #564C6F,*/
+    /*        1px -1px 0 #140C2B,*/
+    /*        -1px 1px 0 #160F33,*/
+    /*        1px 1px 0 #261F42,*/
+    /*        0px -1px 0 #261F42,*/
+    /*        -1px 0px 0 #463D60,*/
+    /*        0px 1px 0 #564C6F,*/
+    /*        1px 0px 0 #160F33; */
+
+    text-shadow:
+        -1px -1px 0 #000,
+        2px -2px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        0px -1px 0 #000,
+        -1px 0px 0 #000,
+        0px 1px 0 #000,
+        1px 0px 0 #000;
+
+
+    /*text-shadow:*/
+    /*        -2px -2px 2px #564C6F,  !* Top-left shadow *!*/
+    /*        2px -2px 2px #140C2B,   !* Top-right shadow *!*/
+    /*        -2px 2px 2px #160F33,   !* Bottom-left shadow *!*/
+    /*        2px 2px 2px #261F42,    !* Bottom-right shadow *!*/
+    /*        0 -4px 2px #261F42,     !* Top shadow for extra depth *!*/
+    /*        -4px 0 2px #463D60,     !* Left shadow for extra depth *!*/
+    /*        0 4px 2px #564C6F,      !* Bottom shadow for extra depth *!*/
+    /*        4px 0 2px #160F33;      !* Right shadow for extra depth *!*/
+    font-size: 45px;
+    /*text-shadow: 2px 2px 4px #000000; !* Horizontal offset, vertical offset, blur radius, color *!*/
+
+
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.Matthew-label2{
+    color: #9370DB;
+    position: relative;
+    /*top: 675px;*/
+    /*left: 435px;*/
+    /*left: 420px;*/
+    top: 45px;
+    right: 12px;
+    align-self: start;
+    font-size: 40px;
+    text-shadow:
+            -1px -1px 0 #000,
+            2px -2px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000,
+            0px -1px 0 #000,
+            -1px 0px 0 #000,
+            0px 1px 0 #000,
+            1px 0px 0 #000;
+
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+
+/*h3{*/
+/*    margin: auto;*/
+/*    position: fixed;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    top: 100px;*/
+/*    */
+
+/*}*/
+
+.send-button{
+    margin: auto;
+    position: fixed;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    top: 600px;
+    bottom: 100px;
+    /*left: 400px;*/
+    /*right: 500px;*/
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px 2px;
+    transition: all 0.4s ease; /* Apply the transition to all changeable properties */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+send-button:hover{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+}
+
+.end{
+    font-size: 46px;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    /*color: wheat;*/
+    text-shadow:
+            -1px -1px 0 #000,
+            2px -2px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000,
+            0px -1px 0 #000,
+            -1px 0px 0 #000,
+            0px 1px 0 #000,
+            1px 0px 0 #000;
+}
+
+p{
+    color: royalblue;
+
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    text-shadow:
+            1px -1px 0 #000,
+            1px -1px 0 #000,
+            0px  -1px 0 #000,
+            0px -1px 0 #000; /* Black outline */
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #interactor-box {
+        width: 100%;
+        padding-inline: 24px;
+        padding-bottom: 24px;
+    }
+}

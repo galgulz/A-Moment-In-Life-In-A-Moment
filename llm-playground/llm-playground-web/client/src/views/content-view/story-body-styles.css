@@ -1,0 +1,94 @@
+#main-body-cont {
+    margin-top: 40px;
+    height: 100%;
+    /*width: 100%;*/
+    box-sizing: border-box;
+    overflow-y: scroll;
+    margin-bottom: 14px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(245, 245, 245, 0.7); /* White with 50% opacity */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+    /*margin-inline: 30px;*/
+    /*margin: auto;*/
+    /*top: 150px;*/
+    /*bottom: 100px;*/
+    /*margin-inside: 300px;*/
+    /*position: fixed;*/
+    width: 50%;
+    /*align-content: center;*/
+
+    /*width: 900px;*/
+    /*font-family: "Sunflower", sans-serif;*/
+    /*font-weight: 300;*/
+    /*font-style: normal;*/
+
+    /*border-radius: 10px; !* Optional: Adds rounded corners to the background *!*/
+    padding: 10px 10px;
+
+
+}
+
+#text-column-cont {
+    width: 800px;
+    padding-bottom: 24px;
+    /*font-family: "Inder", sans-serif;*/
+    /*font-weight: 400;*/
+    /*font-style: normal;*/
+    /*font-size: 22px;*/
+}
+
+
+.callToAction {
+    color: mediumpurple;
+    text-shadow:
+            1px -1px 0 #000,
+            1px -1px 0 #000,
+            0px  -1px 0 #000,
+            0px -1px 0 #000; /* Black outline */
+
+    /*font-style: oblique;*/
+    /*font-style: italic;*/
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    /*font-style: normal;*/
+    /*font-style: normal;*/
+}
+.story {
+    color: steelblue;
+
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    text-shadow:
+            1px -1px 0 #000,
+            1px -1px 0 #000,
+            0px  -1px 0 #000,
+            0px -1px 0 #000; /* Black outline */
+
+}
+
+.user {
+    /*font-family: sans-serif;*/
+    color: #0c1b71;
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*.call-to-action {*/
+/*    !*font-family: sans-serif;*!*/
+/*    color: violet;*/
+/*    font-family: "Basic", sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-style: oblique;*/
+/*}*/
+
+@media only screen and (max-width: 600px) {
+    #text-column-cont {
+        width: 100%;
+    }
+}

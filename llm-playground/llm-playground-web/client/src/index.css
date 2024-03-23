@@ -1,0 +1,72 @@
+html {
+    font-size: 150%;
+}
+
+/*body {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+
+/*    !* Update the file path to the correct location of your image *!*/
+/*    background-image: url('/pictures/driver.jpg'); !* Adjust the path as needed *!*/
+
+/*    !* Additional background styles *!*/
+/*    background-size: cover; !* Ensure the image covers the entire background *!*/
+/*    background-position: center; !* Center the image horizontally and vertically *!*/
+
+/*    !* Add vibrancy with a semi-transparent overlay *!*/
+/*    background-color: rgba(0, 0, 0, 0.5); !* Adjust the opacity (fourth parameter) to your liking *!*/
+/*}*/
+
+input,
+button {
+    font-size: 1em;
+}
+
+#root {
+    position: relative;
+    height: 96.5vh;
+    width: 99vw;
+    margin: 0px;
+    /*margin-left: 10px;*/
+    /*margin-right: 10px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    /* Ensure the content remains visible on top of the background */
+    z-index: 1;
+
+    /* Add some padding to the top to prevent content from being covered by the fixed header */
+    padding-top: 10px; /* Adjust as needed */
+}
+
+h3 {
+    color: wheat;
+    position: relative;
+    text-align: center;
+    /*font-size: 1.5em;*/
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    top: 20px;
+    text-shadow:
+            -1px -1px 0 black,
+            2px -2px 0 black,
+            -1px 1px 0 #000,
+            1px 1px 0 black,
+            0px -1px 0 #000,
+            -1px 0px 0 black,
+            0px 1px 0 #000,
+            1px 0px 0 black;
+    font-size: 60px;
+
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
